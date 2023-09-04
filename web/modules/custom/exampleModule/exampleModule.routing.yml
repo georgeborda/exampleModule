@@ -1,0 +1,7 @@
+exampleModule.form:
+  path: '/example-module/form'
+  defaults: 
+    _title: 'Formulario'
+    _controller: 'Drupal\exampleModule\Controller\exampleModuleController::form'
+  requirements: 
+    _permission: 'access content'

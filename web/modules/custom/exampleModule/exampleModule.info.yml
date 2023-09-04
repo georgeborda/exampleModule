@@ -1,0 +1,6 @@
+name: 'exampleModule'
+type: module
+description: 'Example module'
+core_version_requirement: ^8 || ^9
+package: Custom
+php: 7.4
