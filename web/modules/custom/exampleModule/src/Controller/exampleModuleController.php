@@ -10,11 +10,12 @@ class exampleModuleController extends ControllerBase
     # Demo 
     public function form()
     {
-        // # Build the form
-        // $form = \Drupal::formBuilder()->getForm('Drupal\labforms\Form\DemoForm');
+        # Build the form
+        $form = \Drupal::formBuilder()->getForm('Drupal\exampleModule\Form\ExampleForm');
 
         return [
-            '#markup' => 'Hello world'
+            '#theme' => 'formTemplate',
+            '#form' => $form
         ];
     }
 }

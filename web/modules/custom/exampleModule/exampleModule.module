@@ -1,0 +1,15 @@
+<?php
+
+function exampleModule_theme($existing, $type, $theme, $path)
+{
+  /**
+   * Implements hook_theme().
+   */
+  return [
+    'formTemplate' => [
+      'variables' => [
+        'form' => NULL,
+      ],
+    ],
+  ];
+}

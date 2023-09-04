@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    
+    <form action="" method="post">
+        {{ form.form_build_id }}
+        {{ form.form_id }}    
+
+
+        <!-- Product approval and released content -->
+        <div class="row">
+            <div class="col">
+                <details class="custom-details" open>
+                <summary class="custom-summary"><h3>Liberación y logística</h3></summary>
+                <div class="row mt-1">
+                    <div class="col-12 col-md-6 col-lg-4 col-form">
+                        {{ form.release_and_logistics.product_name }}
+                    </div>
+               </div>
+            </div>
+        </div>
+               
+
+        <!-- Buttons-->
+        <div class="d-grid gap-2 d-md-flex justify-content-sm-end mt-2 mb-4">
+            {{ form.actions }}
+        </div>
+        <!-- /Buttons-->
+
+    </form>
+</div>
